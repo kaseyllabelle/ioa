@@ -1,2 +1,2 @@
 # ioa
-Impact of Accessibility: demos and resources
+Impact of Accessibility: slides, demos, and resources

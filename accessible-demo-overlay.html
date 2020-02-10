@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Accessible Demo with Overlay</title>
+
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="global.css" rel="stylesheet">
+    <link href="overlay.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <form>
+        <div class="row">
+          <div class="col">
+            <div class="input-group my-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" aria-hidden="true">
+                  <i class="fas fa-user fa-fw"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" aria-label="Full Name">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" aria-hidden="true">
+                  <i class="fas fa-credit-card fa-fw"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" aria-label="Credit Card Number">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend" aria-hidden="true">
+                <span class="input-group-text">
+                  <i class="fas fa-calendar-alt fa-fw"></i>
+                </span>
+              </div>
+              <!-- This is for demo purposes only. This is not an advisable solution for Month inputs. -->
+              <input type="number" min="1" max="12" class="form-control" aria-label="Credit Card Expiration Month">
+              <select class="custom-select" aria-label="Credit Card Expiration Year">
+                <option value=""></option>
+                <option value="0">2020</option>
+                <option value="1">2021</option>
+                <option value="2">2022</option>
+                <option value="3">2023</option>
+                <option value="4">2024</option>
+                <option value="5">2025</option>
+                <option value="6">2026</option>
+                <option value="7">2027</option>
+                <option value="8">2028</option>
+                <option value="9">2029</option>
+                <option value="10">2030</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" aria-hidden="true">
+                  <i class="fas fa-lock fa-fw"></i>
+                </span>
+              </div>
+              <input type="password" class="form-control" aria-label="CVC">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <input type="checkbox" id="saveCard">
+                </div>
+              </div>
+              <div class="input-group-append">
+                <label for="saveCard" class="input-group-text">Save as default</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="overlay"></div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+:root {
+  --font-color-primary: #000000;
+  --accent-color-primary: #276EF1;
+  --accent-color-primary-hover: #263139;
+  --font-family-default: 'Overpass', sans-serif;
+  --font-size-body: 1rem;
+  --font-weight-regular: 400;
+}
+
+*
+{
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--font-color-primary);
+}
+
+.nav-link
+{
+  padding: .25rem 0;
+  color: var(--accent-color-primary);
+}
+
+.nav-link:hover
+{
+  color: var(--accent-color-primary);
+  text-decoration: underline;
+}

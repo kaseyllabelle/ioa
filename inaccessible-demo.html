@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Inaccessible Demo</title>
+
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="global.css" rel="stylesheet">
+    <link href="inaccessible-demo.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--
+      The code in this file exists for demo purposes only.
+      There are several accessibility issues.
+    -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">          
+          <div class="input-group my-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-user fa-fw"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-credit-card fa-fw"></i>
+              </span>
+            </div>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-calendar-alt fa-fw"></i>
+              </span>
+            </div>
+            <!-- This is for demo purposes only. This is not an advisable solution for Month inputs. -->
+            <input type="number" min="1" max="12" class="form-control">
+            <select class="custom-select">
+              <option value=""></option>
+              <option value="0">2020</option>
+              <option value="1">2021</option>
+              <option value="2">2022</option>
+              <option value="3">2023</option>
+              <option value="4">2024</option>
+              <option value="5">2025</option>
+              <option value="6">2026</option>
+              <option value="7">2027</option>
+              <option value="8">2028</option>
+              <option value="9">2029</option>
+              <option value="10">2030</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="fas fa-lock fa-fw"></i>
+              </span>
+            </div>
+            <input type="password" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <div class="input-group-text">
+                <input type="checkbox">
+              </div>
+            </div>
+            <div class="input-group-append">
+              <span class="input-group-text">Save as default</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="#" class="btn btn-primary">Submit</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

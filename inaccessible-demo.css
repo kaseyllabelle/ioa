@@ -1,0 +1,14 @@
+/*
+	The code in this file exists for demo purposes only.
+	It's bad practice to use the !important declaration, 
+	and it's bad practice to remove visible focus indicators.
+*/
+
+.custom-select:focus, 
+.form-control:focus,
+.btn-primary:focus
+{
+  outline: 0 !important; 
+  box-shadow: none !important;
+  border-color: #ced4da !important;
+}
