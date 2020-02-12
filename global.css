@@ -26,3 +26,8 @@
   color: var(--accent-color-primary);
   text-decoration: underline;
 }
+
+.wrapper
+{
+  max-width: 500px;
+}

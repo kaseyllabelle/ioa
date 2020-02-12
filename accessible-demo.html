@@ -16,86 +16,59 @@
     <link href="global.css" rel="stylesheet">
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container wrapper">
       <form>
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <div class="input-group my-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" aria-hidden="true">
-                  <i class="fas fa-user fa-fw"></i>
+                  <i class="fas fa-fw fa-user fa-fw"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" aria-label="Full Name">
+              <input type="text" class="form-control" aria-label="Username">
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
+          <div class="col-12">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" aria-hidden="true">
-                  <i class="fas fa-credit-card fa-fw"></i>
+                  <i class="fas fa-fw fa-key"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" aria-label="Credit Card Number">
+              <input type="password" class="form-control" aria-label="Password">
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend" aria-hidden="true">
-                <span class="input-group-text">
-                  <i class="fas fa-calendar-alt fa-fw"></i>
-                </span>
-              </div>
-              <!-- This is for demo purposes only. This is not an advisable solution for Month inputs. -->
-              <input type="number" min="1" max="12" class="form-control" aria-label="Credit Card Expiration Month">
-              <select class="custom-select" aria-label="Credit Card Expiration Year">
-                <option value=""></option>
-                <option value="0">2020</option>
-                <option value="1">2021</option>
-                <option value="2">2022</option>
-                <option value="3">2023</option>
-                <option value="4">2024</option>
-                <option value="5">2025</option>
-                <option value="6">2026</option>
-                <option value="7">2027</option>
-                <option value="8">2028</option>
-                <option value="9">2029</option>
-                <option value="10">2030</option>
-              </select>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <div class="form-group">
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe" class="mb-0">Remember me</label>
             </div>
           </div>
-          <div class="col-6">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" aria-hidden="true">
-                  <i class="fas fa-lock fa-fw"></i>
-                </span>
-              </div>
-              <input type="password" class="form-control" aria-label="CVC">
-            </div>
+          <div class="col-auto">
+            <a href="#" class="btn btn-link mb-3 p-0">
+              Forgot
+            </a>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <div class="input-group-text">
-                  <input type="checkbox" id="saveCard">
-                </div>
-              </div>
-              <div class="input-group-append">
-                <label for="saveCard" class="input-group-text">Save as default</label>
-              </div>
-            </div>
+            <button type="submit" class="btn btn-primary btn-block mb-3 text-right" aria-label="Log in">
+              ⟶
+            </button>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="row align-items-center">
+          <div class="col-auto">
+            <span class="mb-3">or log in with</span>
+            <button type="button" class="btn p-0" aria-label="Facebook">
+              <i class="fab fa-fw fa-lg fa-facebook-square"></i>
+            </button>
+            <button type="button" class="btn p-0" aria-label="Twitter">
+              <i class="fab fa-fw fa-lg fa-twitter-square"></i>
+            </button>
           </div>
         </div>
       </form>

@@ -4,11 +4,23 @@
 	and it's bad practice to remove visible focus indicators.
 */
 
-.custom-select:focus, 
 .form-control:focus,
-.btn-primary:focus
+.form-control:active,
+.btn:focus,
+.btn:active
 {
   outline: 0 !important; 
   box-shadow: none !important;
+}
+
+.form-control:focus,
+.form-control:active
+{
   border-color: #ced4da !important;
+}
+
+.btn:focus,
+.btn:active
+{
+  border-color: transparent !important;
 }
